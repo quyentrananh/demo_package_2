@@ -1,6 +1,7 @@
 {
     "name": "quyen/sample",
     "description": "this is first package",
+    "license": "MIT",
     "authors": [
         {
             "name": "Trần Anh Quyền",
@@ -12,6 +13,16 @@
     "autoload": {
         "psr-4": {
             "Laraveldaily\\Timezones\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Laraveldaily\\Timezones\\TinkerServiceProvider"
+            ]
         }
     }
 }
